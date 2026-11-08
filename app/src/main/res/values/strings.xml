@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">方向盘切歌助手</string>
+    <string name="service_name">方向盘切歌转发服务</string>
+    <string name="notification_listener_name">媒体会话控制</string>
+    <string name="accessibility_description">捕获方向盘「上一首/下一首」媒体按键，转发给 Amcfy Music 切歌。不会读取或收集任何屏幕内容。</string>
+</resources>
