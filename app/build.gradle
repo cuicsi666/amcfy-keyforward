@@ -30,3 +30,12 @@ android {
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.7.0'
 }
+
+// 解决 appcompat 传递依赖里 kotlin-stdlib 版本冲突（Duplicate class）
+configurations.all {
+    resolutionStrategy {
+        force 'org.jetbrains.kotlin:kotlin-stdlib:1.9.24'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.24'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.24'
+    }
+}
